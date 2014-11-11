@@ -4,6 +4,11 @@
 DFDIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )"
 
 pushd $HOME
+
+# Install Oh-My-Zsh (http://ohmyz.sh)
+echo "Installing Oh-my-zsh..."
+wget --no-check-certificate http://install.ohmyz.sh -O - | sh
+
 echo -n "Creating symlinks to dotfiles in home directory"
 
 for file in $(ls $DFDIR); do
