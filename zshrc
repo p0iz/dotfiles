@@ -75,8 +75,5 @@ export EDITOR='vim'
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 
-# pkgfile hook for unknown commands
-source /usr/share/doc/pkgfile/command-not-found.zsh
-
 # rehash dirs always
 setopt nohashdirs
