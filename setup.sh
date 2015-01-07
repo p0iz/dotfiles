@@ -12,7 +12,7 @@ wget --no-check-certificate http://install.ohmyz.sh -O - | sh
 echo -n "Creating symlinks to dotfiles in home directory"
 
 for file in $(ls $DFDIR); do
-  if [ $file != README.md ]; then
+  if [ $file != README.md ] && [ $file != setup.sh ]; then
     ln -b -s $DFDIR/$file .$file
     echo -n "."
   fi
