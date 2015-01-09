@@ -3,7 +3,7 @@
 # Get the directory where this script is located
 DFDIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )"
 
-pushd $HOME
+cd $HOME
 
 # Install Oh-My-Zsh (http://ohmyz.sh)
 echo "Installing Oh-my-zsh..."
@@ -20,4 +20,4 @@ done
 
 echo " done!"
 
-popd
+cd $DFDIR
